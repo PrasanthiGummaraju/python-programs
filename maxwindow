@@ -1,0 +1,17 @@
+
+l=list(map(int,input().split()))
+k=int(input())
+n=len(l)
+ms=sum(l[:k])
+ind=0
+for i in range(1,n-k+1):
+    cs=sum(l[i:i+k])
+    if cs>ms:
+        ms=cs
+        ind=i
+print(*l[ind:ind+k])
+
+output:
+1 2 3 4 3 2 3 5
+4
+3 2 3 5
