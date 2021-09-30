@@ -1,0 +1,15 @@
+n=input()
+d=[int(x) for x in n]
+a=sorted(d)
+a1=sorted(d,reverse=True)
+x=[str(i) for i in a]
+y=[str(i) for i in a1]
+print(int("".join(x))+int("".join(y)))
+
+output:
+''''
+734
+1090
+''''
+exp:
+743+347=1090
